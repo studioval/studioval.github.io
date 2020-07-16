@@ -14,10 +14,9 @@
 	<meta property="fb:app_id" content="383133572042884">
 	<meta property="og:description" content="Studio Val Cabeleireiros é o espaço especializado na beleza e bem-estar localizado na cidade de Bananeiras, no brejo paraibano." />
 	<meta property="og:image" content="https://studioval.github.io/theme/img/logo_redux.png">
-    <!--<link rel="stylesheet" type="text/css" href="theme/plugins/sanitize.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="theme/plugins/sanitize.css">-->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
     <!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -31,7 +30,7 @@
 <!--		Bootstrap-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.min.css?up=040831">
-    <link rel="stylesheet" type="text/css" href="theme/css/estilo.css?up=080849">
+    <link rel="stylesheet" type="text/css" href="theme/css/estilo.css?up=0">
 </head>
 <body class="body">
 		<label>
@@ -40,13 +39,12 @@
 			<ul class="list-unstyled list-menu">
 			  <li> <a class="touchMenu_item" href='#'>Home</a> </li>
 			  <li> <a class="touchMenu_item" href='#'>Sobre</a> </li>
-			  <li> <a class="touchMenu_item" href='#find'>Nos encontre 
-			  <span class="list-unstyled list-iconSocial">
+			  <li> <a class="touchMenu_item" href='#find'>Nos encontre </li>
+			  <li><span class="list-unstyled list-iconSocial">
 				<a class="touchMenu_itemSocial" href='https://www.instagram.com/salaostudioval/'><i class="fab fa-instagram"></i></a>
 				<a class="touchMenu_itemSocial" href='https://www.fb.com/Salaovaldeci/'><i class="fab fa-facebook-square"></i></a>
 				<a class="touchMenu_itemSocial" href='https://api.whatsapp.com/send?l=pt&phone=5583996487759'><i class="fab fa-whatsapp"></i></a>
-			</span>
-			</li>
+			</span></li>
 			</ul>
 		</label>
     <header class="header">
@@ -58,8 +56,10 @@
           </span>
         </button>-->
        <div class="container">
-        <a href="#" class="header-logo" title="Studio Val Cabeleireiros">
+		<picture class="header-logo">
+			<source srcset="theme/img/logo.webp" type="image/webp">
             <img src="theme/img/logo.png" alt="Studio Val Cabeleireiros" class="img-fluid" style="width: 225px;">
+		</picture>
         </a>
         
         </div>
@@ -80,15 +80,14 @@
         </nav>-->
     </header>
 <!--    Banner-->
-    <section class="banner d-flex">
+    <section class="swiper-container">
 	<!-- Slider main container -->
-<div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" style="background-image:linear-gradient(rgba(1,1,1,0.7), rgba(1,1,1,0.7)),url(theme/img/img_background.jpg); background-size: cover;"></div>
-        <div class="swiper-slide" style="background-image:linear-gradient(rgba(1,1,1,0.7), rgba(1,1,1,0.7)),url(theme/img/img_background.jpg); background-size: cover;"></div>
-        <div class="swiper-slide" style="background-image:linear-gradient(rgba(1,1,1,0.7), rgba(1,1,1,0.7)),url(theme/img/img_background.jpg); background-size: cover;"></div>
+        <div class="swiper-slide" style="background-image:url(theme/img/img_background.jpg);"></div>
+        <div class="swiper-slide" style="background-image:url(theme/img/img_background2.jpg);"></div>
+        <div class="swiper-slide" style="background-image:url(theme/img/img_background3.jpg);"></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -99,15 +98,7 @@
 
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
-</div>
 <!-- -->
-        <!-- <div class="container">    
-            <nav class="row align-items-center menu-central" role="navigation">
-                <a class="col-12 col-md-4 menu-central_item" href="#">Sobre nós</a>
-                <a class="col-12 col-md-4 menu-central_item" href="#">Nossos serviços</a>
-                <a class="col-12 col-md-4 menu-central_item" href="#encontre">Nos encontre</a>
-            </nav>
-        </div> -->
     </section>
     <!-- Add Pagination -->
 <div class="container">
@@ -183,7 +174,7 @@
     </div>
 </body>
 </html>
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
 <!--        Jquery-->
     <script type="text/javascript" src="theme/plugins/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="theme/plugins/jquery-migrate-3.0.0.min.js"></script>
@@ -208,7 +199,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mosaic/0.15.2/jquery.mosaic.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mosaic/0.15.2/jquery.mosaic.min.js"></script>
 
-<script type="text/javascript" src="theme/js/funcoes.js"></script>
+<script type="text/javascript" src="theme/js/funcoes.js?up=0"></script>
 
 <script>
   window.fbAsyncInit = function() {
