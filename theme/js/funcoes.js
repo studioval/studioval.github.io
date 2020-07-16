@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
   // And if we need scrollbar
   scrollbar: {
