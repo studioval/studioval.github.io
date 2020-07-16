@@ -1,0 +1,89 @@
+label .touchMenu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #FFF;
+  border-radius: 50% 50% 50% 50%;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #e58526;
+  display: block;
+  transform-origin: center;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #e58526;
+}
+
+label .hamburger:before { top: -10px; }
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .touchMenu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+}
+
+label input:checked + .touchMenu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label input:checked + .touchMenu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+label input:checked + .touchMenu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+label input:checked + .touchMenu + ul { opacity: 1; }
+
+.list-menu {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: .25s 0s ease-in-out;
+}
+.list-iconSocial{
+}
+.touchMenu_item {
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.touchMenu_item:hover,
+.touchMenu_item:focus{
+	color: #e58526;
+	text-decoration: none;
+}
