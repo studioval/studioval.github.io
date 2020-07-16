@@ -106,18 +106,16 @@ menu {
 @media (min-width: 1024px) {
     .swiper-container {height: 100vh;}
 }
-.menu-central{
+.swiper-slide{
+	background-size: cover;
+}
+.swiper-slide:after{
+	background-color: rgba(0,0,0,0.7);
+	content: '';
+	display: block;
 	height: 100%;
-}
-.menu-central_item{
-	color: #FFF;
-	font-family: 'Raleway', sans-serif;
-	font-size: 27px;
-	text-align: center;
-}
-.menu-central_item:hover{
-	color: #e58526;
-	text-decoration: none;
+	position: relative;
+	z-index: 2;
 }
 /*Conteudo home*/
 /*Titulo*/
