@@ -2,7 +2,7 @@
 
 html, .body {
 	min-height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 a {line-height: 200%;}
@@ -117,6 +117,17 @@ menu {
 	position: relative;
 	z-index: 2;
 }
+/*.banner_pin{
+	background-color: #e58526;
+	border-radius: 25%;
+	bottom: calc(0% + 55px);
+	display: block;
+	height: 25px;
+	left: 50%;
+	position: absolute;
+	width: 2px;
+	z-index: 2;
+}*/
 /*Conteudo home*/
 /*Titulo*/
 .title {
@@ -136,7 +147,7 @@ p {
 	background: #FFF;
 	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
 	margin-bottom: 40px;
-	margin-top: -40px;
+	margin-top: -35px;
 	padding: 25px;
 	position: relative;
 	z-index: 2;
@@ -199,10 +210,12 @@ p {
 
 /*Copyright*/
 .copy {
-	margin-top: 15px;
+	margin-top: 10px;
 	text-align: center;
 }
-
+.copy p{
+	margin-bottom: 10px
+}
 .copy_link {
 	border-bottom: 1px solid transparent;
 	color: #444;
