@@ -1,4 +1,4 @@
-label .touchMenu {
+.touchMenu {
   position: absolute;
   right: -100px;
   top: -100px;
@@ -12,7 +12,7 @@ label .touchMenu {
   cursor: pointer;
 }
 
-label .hamburger {
+.hamburger {
   position: absolute;
   top: 135px;
   left: 50px;
@@ -24,8 +24,7 @@ label .hamburger {
   transition: .5s ease-in-out;
 }
 
-label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
+.hamburger:after, .hamburger:before {
   transition: .5s ease-in-out;
   content: "";
   position: absolute;
@@ -35,10 +34,10 @@ label .hamburger:after, label .hamburger:before {
   background: #e58526;
 }
 
-label .hamburger:before { top: -10px; }
-label .hamburger:after { bottom: -10px; }
+.hamburger:before { top: -10px; }
+.hamburger:after { bottom: -10px; }
 
-label input { display: none; }
+.btnMenu { display: none; }
 
 label input:checked + .touchMenu {
   box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
@@ -46,18 +45,15 @@ label input:checked + .touchMenu {
 }
 
 label input:checked + .touchMenu .hamburger {
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 label input:checked + .touchMenu .hamburger:after {
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
 }
 
 label input:checked + .touchMenu .hamburger:before {
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
 }
@@ -74,8 +70,8 @@ label input:checked + .touchMenu + ul { opacity: 1; }
   transform: translate(-50%, -50%);
   transition: .25s 0s ease-in-out;
 }
-.list-iconSocial{
-}
+.list-iconSocial{}
+
 .touchMenu_item {
   margin-bottom: 1em;
   display: block;
