@@ -159,17 +159,20 @@ p {
 	font-size: 17px;
 	font-weight: normal;
 }
-
+.home-galeria_img{
+	margin-bottom: 15px;
+}
 .footer-maps {
+	display: block;
 	height: 350px;
 }
-
 /*Footer*/
 .footer {
 	background-color: #EDEDED;
 	border-top: 1px solid #FFDC00;
 	color: #121212;
 	text-align: center;
+	position: relative;
 }
 .footer-box{
 	margin-bottom: 35px;
@@ -193,7 +196,19 @@ p {
 	color: #e58526;
 	text-decoration: none;
 }
-
+.footer_link-topo{
+	border-bottom: 1px solid transparent;
+	color: #121212;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: -40px;
+}
+.footer_link-topo:hover, .footer_link-topo:focus, .footer_link-topo:active {
+	border-bottom-color: #e58526;
+	color: #e58526;
+	text-decoration: none;
+}
 .footer_social {
 	color: #222;
 	display: inline-block;
