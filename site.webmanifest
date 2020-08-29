@@ -15,5 +15,6 @@
     ],
     "theme_color": "#e58526",
     "background_color": "#e58526",
-    "display": "standalone"
+    "display": "standalone",
+	"start_url": "https://studioval.github.io/"
 }
