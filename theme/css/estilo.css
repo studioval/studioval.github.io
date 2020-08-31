@@ -152,6 +152,12 @@ p {
 	position: relative;
 	z-index: 2;
 }
+.home-local{
+	margin-top: 30px;
+}
+.home-local_img{
+	margin-bottom: 15px;
+}
 /*Servi├ºos*/
 .home-servico_item {
 	color: #222;
@@ -169,6 +175,7 @@ p {
 /*Footer*/
 .footer {
 	background-color: #EDEDED;
+	border-bottom: 1px solid #FFDC00;
 	border-top: 1px solid #FFDC00;
 	color: #121212;
 	text-align: center;
