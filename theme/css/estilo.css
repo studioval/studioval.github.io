@@ -130,12 +130,13 @@ menu {
 }*/
 /*Conteudo home*/
 /*Titulo*/
-.title {
+.title,.subtitle {
 	color: #e58526;
 	font-family: "Raleway", "Arial", sans-serif;
-	font-size: 25px;
 	font-weight: normal;
 }
+.title{font-size: 25px;}
+.subtitle {font-size: 21px;}
 
 p {
 	color: #222;
@@ -151,9 +152,6 @@ p {
 	padding: 25px;
 	position: relative;
 	z-index: 2;
-}
-.home-local{
-	margin-top: 30px;
 }
 .home-local_img{
 	margin-bottom: 15px;
