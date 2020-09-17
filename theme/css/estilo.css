@@ -20,7 +20,14 @@ a, button {transition: all 0.7s linear;}
 	background: #222;
 	color: #e58526;
 }
-
+.btn{
+	border-color: #e58526;
+	color: #e58526;
+}
+.btn:hover{
+	background: #e58526;
+	color: #fff;
+}
 /*Header*/
 .header {
 	margin-bottom: -100px;
