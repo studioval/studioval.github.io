@@ -6,7 +6,7 @@ html, .body {
 }
 
 a {line-height: 200%;}
-a, button {transition: all 0.7s linear;}
+a, button {transition: all 0.75s linear;}
 /*Seletores*/
 ::-webkit-selection {
 	background: #222;
@@ -30,82 +30,19 @@ a, button {transition: all 0.7s linear;}
 }
 /*Header*/
 .header {
-	margin-bottom: -100px;
+	background: rgba(0, 0, 0, 0);
+	margin-bottom: -80px;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
+	top: 0;
+	width: 100%;
 }
 
 .header-logo {
 	display: block;
-	margin: 10px auto;
+	margin: auto;
 }
 
-/* Menu mobile*/
-menu img { display: none; }
-
-
-/*.hamburger {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.menu-header menu, .menu-header ul {
-    margin: 0;
-    padding: 0;
-}
-
-.hamburger-inner,
-.hamburger-inner:after,
-.hamburger-inner:before { background: #e58526; }
-
-menu {
-	background: #222;
-	height: 100%;
-	height: 100vh;
-	margin-top: 0;
-	left: 0;
-	padding: 0;
-	position: fixed;
-	top: 0;
-	transform: translateX(-220px);
-	transition: all 0.25s linear;
-	z-index: 99;
-	width: 220px;
-}
-
-.menu-header li { width: 100%; }
-
-.dropdown-label {
-	border-bottom: 1px solid transparent;
-	color: #FFF;
-	display: block;
-	font-family: "Raleway", "Arial", sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	padding: 10px;
-}
-.dropdown-label:hover, .dropdown-label:focus, .dropdown-label:active {
-	border-bottom-color: #EEE;
-	color: #EEE;
-	text-decoration: none;
-}
-.menu-active menu {transform: translateX(0); }
-
-.menu-active .main {
-	margin: 0 -220px;
-	transform: translateX(220px);
-}
-*/
-/*Banner
-.banner {
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 470px;
-	height: 100vh;
-	position: relative;
-	width: 100%;
-}*/
 .swiper-container {
     width: 100%;
     height: 55vh;
@@ -116,52 +53,109 @@ menu {
 .swiper-slide{
 	background-size: cover;
 }
-.swiper-slide:after{
-	background-color: rgba(0,0,0,0.7);
+.swiper-slide::after{
+	background-color: rgba(0,0,0,0.8);
 	content: '';
 	display: block;
 	height: 100%;
-	position: relative;
+	width: 100%;
+	position: absolute;
+	top: 0;
 	z-index: 2;
 }
-/*.banner_pin{
-	background-color: #e58526;
-	border-radius: 25%;
-	bottom: calc(0% + 55px);
-	display: block;
-	height: 25px;
-	left: 50%;
-	position: absolute;
-	width: 2px;
+.banner-title{
+	color: #e58526;
+	font-family: "Raleway", "Arial", sans-serif;
+	font-weight: normal;
+	text-align: center;
+	position: relative;
+	z-index: 3;
+}
+/*Seta do banner*/
+.arrow{
+    position: absolute;
+    bottom: calc(0% + 40px);
+    left: 50%;
+    transform: translate(-50%,-50%);
 	z-index: 2;
-}*/
+}
+.arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #e58526;
+    border-right: 1px solid #e58526;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 /*Conteudo home*/
 /*Titulo*/
 .title,.subtitle {
 	color: #e58526;
 	font-family: "Raleway", "Arial", sans-serif;
-	font-weight: normal;
+	margin-bottom: 15px;
 }
-.title{font-size: 25px;}
+.title{font-size: 30px;}
+.title:after{
+	content: '';
+	background: #e58526;
+	display: block;
+	height: 2px;
+	margin-top: 10px;
+	width: 100px;
+}
 .subtitle {font-size: 21px;}
 
 p {
 	color: #222;
 	font-family: "Raleway", "Arial", sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 }
-.home-quem-somos{
+.home-quemSomos{
 	background: #FFF;
 	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
 	margin-bottom: 40px;
-	margin-top: -35px;
+	margin-top: 5px;
 	padding: 25px;
 	position: relative;
 	z-index: 2;
 }
 .home-local_img{
-	margin-bottom: 15px;
+	box-shadow: 0px 0px 2px 0px rgba(229, 133, 38,0.5);
+	border-radius: 5px;
+}
+.home-sobre_link{
+	border-bottom: 1px solid transparent;
+	color: #e58526;
+}
+.home-sobre_link:hover,
+.home-sobre_link:focus{
+	border-bottom-color: #e58526;
+	color: #e58526;
+}
+.justify-content-end .home-localBox{
+	margin-top: -60px;
 }
 /*Servi├ºos*/
 .home-servico_item {
@@ -171,7 +165,13 @@ p {
 	font-weight: normal;
 }
 .home-galeria_img{
+	opacity: 0.7;
 	margin-bottom: 15px;
+	transition: all 0.75s linear;
+}
+.home-galeria_img:hover,
+.home-galeria_img:focus{
+	opacity: 1;
 }
 .footer-maps {
 	display: block;
@@ -191,7 +191,7 @@ p {
 	margin-top: 35px;
 }
 .footer_title {
-	color: #121212;
+	color: #e58526;
 	font-family: "Raleway", "Arial", sans-serif;
 	font-weight: normal;
 }
