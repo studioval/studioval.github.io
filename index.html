@@ -31,7 +31,7 @@
 	<meta name="msapplication-TileColor" content="#e58526">
 	<meta name="theme-color" content="#e58526">
 <!--		Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css?up=040831">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-grid.min.css?up=040831">
     <link rel="stylesheet" type="text/css" href="theme/css/estilo.css?up=2">
 	 <script type="application/ld+json">
@@ -83,8 +83,13 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" style="background-image:url(theme/img/img_background.jpg);"></div>
-        <div class="swiper-slide" style="background-image:url(theme/img/img_background2.jpg);"></div>
+        <div class="swiper-slide" style="background-image:url(theme/img/img_background.jpg);">
+		</div>
+        <div class="swiper-slide" style="background-image:url(theme/img/img_background2.jpg);">
+			<div class="container h-100">
+			<div class="row h-100 align-items-center justify-content-center"></div>
+			</div>
+		</div>
         <div class="swiper-slide" style="background-image:url(theme/img/img_background3.jpg);"></div>
     </div>
     <!-- If we need pagination -->
@@ -93,56 +98,43 @@
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
 <!-- -->
-	<span class="banner_pin"></span>
+	<a class="arrow" id="arrowBanner" href="#contentHome">
+		<span></span>
+		<span></span>
+		<span></span>  
+	</a>
     </section>
     <!-- Add Pagination -->
 <div class="container">
-<main class="home-quem-somos">
+<main class="home-quemSomos" id="contentHome">
 <div class="row">
-    <article class="col-12 col-sm-6 home-sobre">
-        <h1 class="title">Studio Val cabeleireiros</h1>
-		<p>Studio Val Cabeleireiros é o espaço especializado no seu bem-estar e beleza, com mais de 15 anos de experiência, agora está localizado na cidade de Bananeiras, no brejo paraibano.
+    <article class="col-12 col-sm-5 home-sobre">
+        <h1 class="title">Nos conheça melhor</h1>
+		<p>O Studio Val Cabeleireiros é o espaço especializado no seu bem-estar e beleza, com mais de 15 anos de experiência, agora está localizado na cidade de Bananeiras, no brejo paraibano.
 		<br>
 		Além dos serviços de tratamento e cuidados com seus cabelos, disponibilizamos  também serviços de design de manicure, pedicure e depilação (com ou sem o uso de cera).
 		<br>
 		Contamos também com design de sobrancelhas, com ou sem o uso de henna, além de esfoliação e design de barba (com ou sem o uso de cera).
+		<br>
 		</p>
-		<a class="btn" href="#" title="Conheça mais">Conheça mais</a>
+		<a class="home-sobre_link" href="#" title="Conheça mais"><i class="fas fa-2x fa-long-arrow-alt-right"></i></a>
     </article>
 	
-<article class="col-12 col-sm-6 home-local">
-<h2 class="title">Nosso espaço</h2>
+<article class="col-12 col-sm-7 home-local">
 <div class="row">
-<div class="col-6 col-sm-4 home-localBox">
+<div class="col-7 home-localBox">
 <a href="theme/img/fotos_local/fotoLocal_interna1.jpg" data-lightbox="image-1" data-title="Foto interna">
-        <img class="img-fluid home-local_img" src="theme/img/fotos_local-thumb/fotoLocal_interna1.jpg" alt="Foto de dentro do salão" />
+        <img class="img-fluid home-local_img" src="theme/img/fotos_local/fotoLocal_interna1.jpg" alt="Foto de dentro do salão" />
       </a>
 </div>
-<div class="col-6 col-sm-4 home-localBox">
+</div>
+<div class="row justify-content-end">
+<div class="col-7 home-localBox">
 <a href="theme/img/fotos_local/fotoLocal_interna2.jpg" data-lightbox="image-1" data-title="Foto interna">
-        <img class="img-fluid home-local_img" src="theme/img/fotos_local-thumb/fotoLocal_interna2.jpg" alt="Foto de dentro do salão" />
+        <img class="img-fluid home-local_img" src="theme/img/fotos_local/fotoLocal_interna2.jpg" alt="Foto de dentro do salão" />
       </a>
 </div>
-<div class="col-6 col-sm-4 home-localBox">
-<a href="theme/img/fotos_local/fotoLocal_interna3.jpg" data-lightbox="image-1" data-title="Foto interna">
-        <img class="img-fluid home-local_img" src="theme/img/fotos_local-thumb/fotoLocal_interna3.jpg" alt="Foto de dentro do salão" />
-      </a>
-</div>
-<div class="col-6 col-sm-4 home-localBox">
-<a href="theme/img/fotos_local/fotoLocal_interna4.jpg" data-lightbox="image-1" data-title="Foto interna">
-        <img class="img-fluid home-local_img" src="theme/img/fotos_local-thumb/fotoLocal_interna4.jpg" alt="Foto de dentro do salão" />
-      </a>
-</div>
-<div class="col-6 col-sm-4 home-localBox">
-<a href="theme/img/fotos_local/fotoLocal_interna4.jpg" data-lightbox="image-1" data-title="Foto interna">
-        <img class="img-fluid home-local_img" src="theme/img/fotos_local-thumb/fotoLocal_interna4.jpg" alt="Foto de dentro do salão" />
-      </a>
-</div>
-<div class="col-6 col-sm-4 home-localBox">
-<a href="theme/img/fotos_local/fotoLocal_interna4.jpg" data-lightbox="image-1" data-title="Foto interna">
-        <img class="img-fluid home-local_img" src="theme/img/fotos_local-thumb/fotoLocal_interna4.jpg" alt="Foto de dentro do salão" />
-      </a>
-</div>
+
 </div>
 
 </article>
@@ -228,7 +220,7 @@
 	</div>
 </div>
 </div>
-<a href="#topo" class="footer_link-topo float-right">Voltar ao topo</a>
+<a href="#topo" class="footer_link-topo float-right">Voltar ao topo <i class="fas fa-arrow-up"></i></a>
 
 </footer>
     <div class="copy">
@@ -270,9 +262,7 @@
       xfbml      : true,
       version    : 'v7.0'
     });
-      
-    FB.AppEvents.logPageView();   
-      
+    FB.AppEvents.logPageView();
   };
 
   (function(d, s, id){
